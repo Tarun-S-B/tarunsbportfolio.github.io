@@ -15,6 +15,20 @@
 </head>
 
 <body>
+    <!-- Progress bar -->
+    <div class="progress-bar"></div>
+    
+    <!-- Loading spinner -->
+    <div class="loading-spinner"></div>
+    
+    <!-- Toast container -->
+    <div class="toast-container"></div>
+    
+    <!-- Back to top button -->
+    <button class="back-to-top" aria-label="Back to top">↑</button>
+    
+    <!-- Theme toggle -->
+    <button class="theme-toggle" aria-label="Toggle theme">🌓</button>
 
     <!-- HEADER SECTION -->
     <header class="header">
@@ -64,6 +78,7 @@
         <div class="section-sep"></div>
 
         <div class="education-card">
+            <div class="card-overlay"></div>
             <div class="edu-name">
 
                 <div>
@@ -81,6 +96,7 @@
 
         <div class="section-sep"></div>
         <div class="education-card">
+            <div class="card-overlay"></div>
             <div class="edu-name">
 
                 <div>
@@ -95,6 +111,7 @@
 
         <div class="section-sep"></div>
         <div class="education-card">
+            <div class="card-overlay"></div>
             <div class="edu-name">
 
                 <div>
@@ -114,6 +131,7 @@
         <div class="section-sep"></div>
 
         <div class="education-card">
+            <div class="card-overlay"></div>
             <div class="edu-name">
 
                 <div>
@@ -163,7 +181,7 @@
                 <h1 class="section-heading">Introduction</h1>
 
                 <h2><span class="important">What is BlackRock and What is Aladdin?</span></h2>
-                <p> &emsp; BlackRock is the world’s largest investment management corporation, operating in 90 locations
+                <p> &emsp; BlackRock is the world's largest investment management corporation, operating in 90 locations
                     across 30 countries.
                     BlackRock's assets hit a record high $11.6 trillion<a
                         href="https://economictimes.indiatimes.com/news/international/business/blackrock-assets-hit-record-11-6-trillion-in-fourth-quarter-of-2024/articleshow/117267678.cms?from=mdr"
@@ -176,7 +194,7 @@
                 </p>
                 <p>
                     &emsp; <span class="important"> Aladdin (Asset, Liability, Debt, and Derivative Investment Network)
-                    </span> is BlackRock’s
+                    </span> is BlackRock's
                     proprietary investment platform developed in the late 1980s. It integrates portfolio management,
                     risk analytics, trading, and operations into a single unified system.
                 </p>
@@ -186,14 +204,14 @@
             <section id="history" class="history-section section">
                 <h2><span class="important">History and Influence</span></h2>
                 <p> Aladdin began in 1988 on a single Sun workstation (pioneered by Charles Hallac and Benett Golub).
-                    Its first major client was GE’s Kidder Peabody mortgage portfolio in 1994. Strong external demand
+                    Its first major client was GE's Kidder Peabody mortgage portfolio in 1994. Strong external demand
                     led BlackRock to productize Aladdin for third parties, forming BlackRock Solutions in 2000.
-                    The platform’s analytics proved valuable during market crises, cementing BlackRock’s reputation for
+                    The platform's analytics proved valuable during market crises, cementing BlackRock's reputation for
                     risk technology. Aladdin has evolved via heavy R&D and client-driven enhancements, and it now
                     underpins roughly $18–22 trillion of assets. About 210 institutional clients use some form of
                     Aladdin deployment.
                     BlackRock aims for 30% of its revenue to come from tech-related services like Aladdin licensing,
-                    making Aladdin a strategic asset often described as “the operating system for investment managers.”
+                    making Aladdin a strategic asset often described as "the operating system for investment managers."
 
                 </p>
             </section>
@@ -284,8 +302,8 @@
                 <h3 class="important">Graph</h3>
                 <p> Aladdin, BlackRock's investment and risk management platform, is a highly distributed system that
                     handles vast quantities of financial data, performs analytics, manages portfolios, and executes
-                    trades. To understand Aladdin’s communication architecture using a graph data structure analogy,
-                    let’s break it down:
+                    trades. To understand Aladdin's communication architecture using a graph data structure analogy,
+                    let's break it down:
                 </p>
                 <img src="https://elearn.daffodilvarsity.edu.bd/pluginfile.php/750962/course/section/113168/connect-any-structure.gif"
                     alt="Graph Representation" class="system-design-image">
@@ -361,7 +379,7 @@
 
                 Aladdin may choose the lowest latency path between geographically distributed data centers.
                 <br />
-                Example: Apply <span class="important">Dijkstra’s algorithm </span><a
+                Example: Apply <span class="important">Dijkstra's algorithm </span><a
                     href="https://github.com/Tarun-S-B/APS/blob/main/Portfolio_snippets/djikstras.c" target="_blank"
                     rel="noopener noreferrer" class="link">
                     <img class="link-image" src="./assets/link_402730.png" alt="Link Image" class="faculty-image">

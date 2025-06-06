@@ -4,35 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <title>Tarun S B - Resume</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Noto+Sans+Mono:wght@100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <!-- Progress bar -->
+    <div class="progress-bar"></div>
+    
+    <!-- Loading spinner -->
+    <div class="loading-spinner"></div>
+    
+    <!-- Toast container -->
+    <div class="toast-container"></div>
+    
+    <!-- Back to top button -->
+    <button class="back-to-top" aria-label="Back to top">↑</button>
+    
+    <!-- Theme toggle -->
+    <button class="theme-toggle" aria-label="Toggle theme">🌓</button>
 
     <!-- HEADER SECTION -->
     <header class="header">
-        <!-- My name -->
-        <!-- profile section -->
         <div class="profile-section">
             <img src="./assets/navbar_icon.png" alt="Profile Picture" class="navbar-icon">
             <span>Tarun S B</span>
         </div>
 
-        <!-- Navbar -->
         <nav class="navbar">
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="./index.html">Case Study</a></li>
-                <!-- <li><a href="#skills">Skills</a></li> -->
                 <li><a href="#footer">About</a></li>
             </ul>
         </nav>
     </header>
-
 
     <div class="side-and-content">
         <!-- Sidebar Section -->
@@ -47,8 +58,6 @@
             </nav>
         </div>
 
-
-
         <!-- Main Content Section -->
         <main class="content">
             <!-- Projects Section -->
@@ -56,10 +65,11 @@
             <!-- Experience Section -->
             <section id="education" class="education-section section">
                 <h1 class="section-heading">Education</h1>
-
                 <div class="section-sep"></div>
+                
                 <!-- Engineering -->
                 <div class="education-card">
+                    <div class="card-overlay"></div>
                     <div class="edu-name">
                         <!-- <img src="./assets/kle_logo.png" alt="KLE Logo" class="education-logo"> -->
                         <div>
@@ -76,6 +86,7 @@
 
                 <!-- PU -->
                 <div class="education-card">
+                    <div class="card-overlay"></div>
                     <div class="edu-name">
                         <!-- <img src="./assets/calculating.png" alt="book image" class="education-logo"> -->
                         <div>
@@ -92,6 +103,7 @@
 
                 <!-- School -->
                 <div class="education-card">
+                    <div class="card-overlay"></div>
                     <div class="edu-name">
                         <!-- <img src="./assets/book.png" alt="book image" class="education-logo"> -->
                         <div>
@@ -117,6 +129,7 @@
                     <!-- <div class="project-row"> -->
 
                     <div class="project-card">
+                        <div class="card-overlay"></div>
                         <div class="project-card-bar">
                             <img src="./assets/world-wide-web.png" alt="Project Domain"
                                 class="project-icon self-chef-project-icon">
@@ -140,6 +153,7 @@
                     </div>
 
                     <div class="project-card">
+                        <div class="card-overlay"></div>
                         <div class="project-card-bar">
                             <img src="./assets/c_6132222.png" alt="Project Domain" class="project-icon">
                             <a href="https://github.com/Tarun-S-B/Credit-Card-Transactions" target="_blank"
@@ -163,6 +177,7 @@
 
 
                     <div class="project-card">
+                        <div class="card-overlay"></div>
                         <div class="project-card-bar">
                             <img src="./assets/letter-c.png" alt="Project Domain" class="project-icon">
                             <a href="https://github.com/Tarun-S-B/DSA-Course-Project" target="_blank"
@@ -185,6 +200,7 @@
                     </div>
                     <!-- </div> -->
                     <div class="project-card">
+                        <div class="card-overlay"></div>
                         <div class="project-card-bar">
                             <img src="./assets/ai-technology_18710688.png" alt="Project Domain" class="project-icon">
                             <a href="https://github.com/Tarun-S-B/ml-course-project-FaceNet-Yolo11-Person-Reidentification"
@@ -212,6 +228,7 @@
                 <h1 class="section-heading">Certifications</h1>
                 <div class="section-sep"></div>
                 <div class="certificate-card parallax card-1">
+                    <div class="card-overlay"></div>
                     <h1>Google Data Analytics Professional Certificate</h1>
                     <div onclick="window.open('https://coursera.org/share/5acc0150def6161633b06bc37cd8a527', '_blank')"
                         rel="noopener noreferrer" style="cursor: pointer;" class="certificate-link">
@@ -221,6 +238,7 @@
                 </div>
 
                 <div class="certificate-card parallax card-2">
+                    <div class="card-overlay"></div>
                     <h1>NPTEL Cryptography and Network Security</h1>
                     <div onclick="window.open('https://internalapp.nptel.ac.in/noc/Ecertificate/?q=NPTEL25CS16S54430007104278499', '_blank')"
                         rel="noopener noreferrer" style="cursor: pointer;" class="certificate-link">
@@ -232,6 +250,7 @@
                 </div>
 
                 <div class="certificate-card parallax card-3">
+                    <div class="card-overlay"></div>
                     <h1>NPTEL Ethical Hacking</h1>
                     <div onclick="window.open('https://nptel.ac.in/noc/E_Certificate/NPTEL24CS94S35450012003954288', '_blank')"
                         rel="noopener noreferrer" style="cursor: pointer;" class="certificate-link">
